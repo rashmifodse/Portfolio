@@ -1,306 +1,392 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Rashmi Fodse — Strategic Digital Marketing Executive</title>
-  <meta name="description" content="Strategic digital marketing executive driving ROI, lead generation, and brand growth for Thane’s leading real estate consultancy. YouTube SEO, paid media, UX, CRM, analytics." />
-
-  <meta property="og:title" content="Rashmi Fodse — Strategic Digital Marketing Executive" />
-  <meta property="og:description" content="I transform marketing into a business growth engine through data-driven strategy and creative execution." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rashmifodse.github.io" />
-  <meta property="og:image" content="images/og-image.jpg" />
-
-  <meta name="theme-color" content="#0f172a" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Rashmi Fodse",
-    "jobTitle": "Strategic Digital Marketing Executive",
-    "url": "https://rashmifodse.github.io",
-    "sameAs": [
-      "https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME"
-    ],
-    "worksFor": {
-      "@type": "Organization",
-      "name": "Thane’s Leading Real Estate Consultancy"
-    },
-    "knowsAbout": [
-      "YouTube SEO",
-      "Paid Media",
-      "Local SEO",
-      "UI/UX",
-      "CRM",
-      "GA4",
-      "GTM"
-    ]
-  }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashmi Fodse | Full-Stack Marketing Strategist</title>
+    <meta name="description" content="Portfolio of Rashmi Fodse, a full-stack digital marketing executive specializing in data-driven strategies for business growth.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7fafc;
+        }
+        .container {
+            max-width: 1200px;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 8px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 50%;
+            height: 4px;
+            background-color: #3b82f6; /* Blue-500 */
+            border-radius: 9999px;
+        }
+        .text-gradient {
+            background-image: linear-gradient(to right, #3b82f6, #60a5fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Gallery modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.9);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            max-height: 90vh;
+            object-fit: contain;
+        }
+        .close {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            color: #f1f1f1;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .close:hover,
+        .close:focus {
+            color: #bbb;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3b82f6;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
 </head>
 
-<body>
-  <!-- ===== Header / Nav ===== -->
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top">RF</a>
-      <nav class="menu">
-        <a href="#about">About</a>
-        <a href="#impact">Impact</a>
-        <a href="#skills">Skills</a>
-        <a href="#cases">Case Studies</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact" class="btn btn-primary">Contact</a>
-      </nav>
-    </div>
-  </header>
+<body class="bg-gray-50 text-gray-800">
 
-  <!-- ===== Hero ===== -->
-  <main id="top">
-    <section class="hero container">
-      <div class="hero-text">
-        <h1>Strategic Digital Marketing Executive</h1>
-        <p class="subtitle">
-          I transform marketing into a business growth engine—integrating paid media, SEO, UX, CRM, and analytics to drive pipeline, revenue, and brand equity.
-        </p>
-        <div class="hero-meta">
-          <span class="badge">Full‑Stack Marketing</span>
-          <span class="badge">Real Estate Expertise</span>
-          <span class="badge">Data‑Driven</span>
+    <!-- Header Section -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-900">
+                <span class="text-blue-500">Rashmi</span> Fodse
+            </h1>
+            <nav class="mt-4 sm:mt-0">
+                <ul class="flex space-x-6 text-gray-600">
+                    <li><a href="#about" class="hover:text-blue-500 transition duration-300">About</a></li>
+                    <li><a href="#expertise" class="hover:text-blue-500 transition duration-300">Expertise</a></li>
+                    <li><a href="#achievements" class="hover:text-blue-500 transition duration-300">Achievements</a></li>
+                    <li><a href="#portfolio" class="hover:text-blue-500 transition duration-300">Portfolio</a></li>
+                    <li><a href="#contact" class="hover:text-blue-500 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Hire Me</a>
-          <a href="#impact" class="btn btn-ghost">See Impact</a>
-        </div>
-      </div>
-      <div class="hero-media">
-        <!-- Replace with your headshot -->
-        <img src="images/headshot.jpg" alt="Portrait of Rashmi Fodse" class="hero-img" />
-      </div>
-    </section>
+    </header>
 
-    <!-- ===== About ===== -->
-    <section id="about" class="section container">
-      <div class="section-header">
-        <h2>About</h2>
-        <p>
-          With 3+ years in real estate marketing at Thane’s leading consultancy, I manage end‑to‑end growth: strategy, execution, and optimization. My decisions are data‑based and outcome‑oriented, turning channels into reliable sales engines.
-        </p>
-      </div>
+    <main class="container mx-auto px-4 py-12 space-y-24">
 
-      <div class="about-grid">
-        <div class="card">
-          <h3>What I Bring</h3>
-          <ul class="list">
-            <li><strong>Performance mindset:</strong> 200+ qualified leads/month on a ₹20K budget across Google, Meta, and YouTube Ads.</li>
-            <li><strong>Owned + Organic:</strong> YouTube SEO, GBP local SEO, and content systems that convert attention into revenue.</li>
-            <li><strong>UX that sells:</strong> WordPress + Elementor landing pages engineered for conversion and smooth user journeys.</li>
-            <li><strong>Lifecycle orchestration:</strong> Email (HubSpot/Mailchimp), WhatsApp marketing, and CRM (HubSpot/Sell.Do).</li>
-            <li><strong>Accountable analytics:</strong> GA4, GTM, Meta Event Manager, Search Console—full‑funnel tracking for ROI.</li>
-          </ul>
-        </div>
+        <!-- Hero Section -->
+        <section class="text-center py-16">
+            <h2 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-tight">
+                A <span class="text-gradient">Strategic Business Asset</span>, <br class="hidden md:inline">
+                Not Just a Marketer.
+            </h2>
+            <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+                With a 3+ year track record in full-stack digital marketing, I translate data-driven insights into <br>
+                measurable business growth and market leadership in the real estate sector.
+            </p>
+        </section>
 
-        <div class="card">
-          <h3>Not Just “Marketing”</h3>
-          <p>
-            I operate as a strategic business asset—aligning channel strategy with revenue targets, defending CPL and CAC, and iterating through monthly reviews. My focus: predictable pipeline, high‑intent traffic, and brand trust at scale.
-          </p>
-          <ul class="list">
-            <li><strong>Reputation:</strong> Review responses, query handling, and brand tone consistency.</li>
-            <li><strong>Creatives:</strong> Ad designs and video thumbnails sustaining a 7% CTR.</li>
-            <li><strong>Data hygiene:</strong> Excel reporting and CRM discipline for clean handoffs to sales.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Impact / Metrics ===== -->
-    <section id="impact" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Business Impact</h2>
-          <p>Selected outcomes that demonstrate revenue alignment and operating rigor.</p>
-        </div>
-
-        <div class="metrics">
-          <div class="metric">
-            <div class="kpi">₹2 Lakhs</div>
-            <div class="label">AdSense revenue</div>
-            <div class="note">First YouTube channel monetized in 12 months</div>
-          </div>
-          <div class="metric">
-            <div class="kpi">₹5 Lakhs+</div>
-            <div class="label">Monthly sales influenced</div>
-            <div class="note">YouTube as a qualified lead engine</div>
-          </div>
-          <div class="metric">
-            <div class="kpi">200+</div>
-            <div class="label">Qualified leads / month</div>
-            <div class="note">On ₹20K blended paid budget</div>
-          </div>
-          <div class="metric">
-            <div class="kpi">#1 Rank</div>
-            <div class="label">GBP for 7+ keywords</div>
-            <div class="note">High‑intent local search</div>
-          </div>
-          <div class="metric">
-            <div class="kpi">7%</div>
-            <div class="label">CTR on creatives</div>
-            <div class="note">Ads and video thumbnails</div>
-          </div>
-          <div class="metric">
-            <div class="kpi">2 Channels</div>
-            <div class="label">Monetized + in pipeline</div>
-            <div class="note">Both driving sales and brand lift</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Skills / Tools ===== -->
-    <section id="skills" class="section container">
-      <div class="section-header">
-        <h2>Skills & Tools</h2>
-        <p>Full‑stack execution across acquisition, conversion, and retention.</p>
-      </div>
-
-      <div class="skills-grid">
-        <div class="card">
-          <h3>Acquisition</h3>
-          <ul class="list">
-            <li><strong>Paid:</strong> Google Ads, Meta Ads, YouTube Ads</li>
-            <li><strong>SEO:</strong> YouTube SEO, GBP Local SEO, Keyword Strategy</li>
-            <li><strong>Tools:</strong> Search Console, Keyword Planner, SEMrush, Ahrefs, Ubersuggest</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Conversion</h3>
-          <ul class="list">
-            <li><strong>UX & Web:</strong> WordPress, Elementor, Landing Pages</li>
-            <li><strong>Creatives:</strong> Ad Creatives, Video Thumbnails, Social Media</li>
-            <li><strong>Tracking:</strong> GA4, GTM, Meta Event Manager</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Retention & Ops</h3>
-          <ul class="list">
-            <li><strong>CRM:</strong> HubSpot, Sell.Do</li>
-            <li><strong>Email & Messaging:</strong> HubSpot, Mailchimp, WhatsApp Marketing (2.3 yrs)</li>
-            <li><strong>Data:</strong> Excel reporting, monthly performance reviews</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Case Studies ===== -->
-    <section id="cases" class="section section-alt">
-      <div class="container">
-        <div class="section-header">
-          <h2>Case Studies</h2>
-          <p>Briefs structured like business outcomes, not channel activity.</p>
-        </div>
-
-        <div class="cases">
-          <article class="case card">
-            <h3>YouTube Growth Engine</h3>
-            <p class="case-meta">Role: Strategy, SEO, Content Ops • Timeline: 12 months</p>
-            <ul class="list">
-              <li><strong>Objective:</strong> Build an always‑on inbound engine for qualified real estate leads.</li>
-              <li><strong>Approach:</strong> YouTube SEO, content mapping to high‑intent queries, CTR‑optimized thumbnails, retention‑first scripting.</li>
-              <li><strong>Tracking:</strong> GA4 and UTM discipline; Search Console for query expansion.</li>
-              <li><strong>Outcome:</strong> Channel monetized in 12 months, ₹2L AdSense revenue, consistent sales influence; second channel tracking to monetize soon.</li>
-            </ul>
-          </article>
-
-          <article class="case card">
-            <h3>Lean Lead Generation System</h3>
-            <p class="case-meta">Role: Performance Marketing & UX • Budget: ₹20K/month</p>
-            <ul class="list">
-              <li><strong>Objective:</strong> Scale qualified inquiries while maintaining efficient CPL.</li>
-              <li><strong>Approach:</strong> Google, Meta, YouTube Ads; conversion‑optimized Elementor landing pages; message‑match creatives.</li>
-              <li><strong>Tracking:</strong> GTM + GA4 events, Meta Events; weekly cohort review with sales.</li>
-              <li><strong>Outcome:</strong> 200+ qualified leads/month; smoother user journeys and higher form completion.</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== Portfolio Gallery (CSS-only Lightbox) ===== -->
-    <section id="portfolio" class="section container">
-      <div class="section-header">
-        <h2>Portfolio</h2>
-        <p>Selected screenshots. Click to view larger. Replace placeholders in /images.</p>
-      </div>
-
-      <div class="gallery">
-        <!-- Thumbnail links to the lightbox anchors -->
-        <a href="#img1"><img src="images/yt-thumbnail-1.jpg" alt="YouTube SEO performance" /></a>
-        <a href="#img2"><img src="images/landing-page.jpg" alt="Landing page UX" /></a>
-        <a href="#img3"><img src="images/ad-creative.jpg" alt="Ad creative 7% CTR" /></a>
-        <a href="#img4"><img src="images/seo-dashboard.jpg" alt="Local SEO rankings" /></a>
-      </div>
-
-      <!-- Lightbox targets -->
-      <div class="lightbox" id="img1">
-        <a href="#portfolio" class="close" aria-label="Close"></a>
-        <img src="images/yt-thumbnail-1.jpg" alt="YouTube SEO performance large" />
-      </div>
-      <div class="lightbox" id="img2">
-        <a href="#portfolio" class="close" aria-label="Close"></a>
-        <img src="images/landing-page.jpg" alt="Landing page UX large" />
-      </div>
-      <div class="lightbox" id="img3">
-        <a href="#portfolio" class="close" aria-label="Close"></a>
-        <img src="images/ad-creative.jpg" alt="Ad creative large" />
-      </div>
-      <div class="lightbox" id="img4">
-        <a href="#portfolio" class="close" aria-label="Close"></a>
-        <img src="images/seo-dashboard.jpg" alt="Local SEO rankings large" />
-      </div>
-    </section>
-
-    <!-- ===== Contact ===== -->
-    <section id="contact" class="section section-alt">
-      <div class="container">
-        <div class="contact card">
-          <h2>Contact</h2>
-          <p>If you’re building pipeline and brand in real estate, let’s talk about outcomes and operating cadence.</p>
-
-          <div class="contact-grid">
-            <div>
-              <p><strong>Email:</strong> <a href="mailto:rashmifodse@example.com">rashmifodse@example.com</a></p>
-              <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR-LINKEDIN-USERNAME" target="_blank" rel="noopener">linkedin.com/in/YOUR-LINKEDIN-USERNAME</a></p>
-              <p><strong>Notion:</strong> <a href="https://rashmifodse.notion.site/Rashmi-Fodse-f31ae2c1b71a4377be8e767bd5d2e092" target="_blank" rel="noopener">Notion Portfolio</a></p>
+        <!-- About Section -->
+        <section id="about" class="flex flex-col md:flex-row items-center justify-center gap-12">
+            <div class="md:w-1/2">
+                <h3 class="section-title text-3xl font-semibold text-gray-900 mb-6">About Me</h3>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    I am a digital marketing executive with over 3 years of experience specializing in the real estate industry. My journey has been defined by a full-stack approach, where I meticulously analyze customer behavior and market dynamics to craft strategies that don't just generate leads, but drive sustainable business growth. I am driven by data and am passionate about optimizing every touchpoint of the user journey to maximize ROI and deliver exceptional results.
+                </p>
             </div>
-            <div>
-              <a class="btn btn-primary" href="documents/Rashmi_Fodse_Resume.pdf" download>Download Resume</a>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="w-64 h-64 bg-gray-300 rounded-full overflow-hidden shadow-lg border-4 border-white transition-transform transform hover:scale-105">
+                    <img src="https://placehold.co/256x256/E5E7EB/4B5563?text=Your+Photo" alt="Rashmi Fodse" class="w-full h-full object-cover">
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+        </section>
 
-  <!-- ===== Footer ===== -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="y"></span> Rashmi Fodse. All rights reserved.</p>
+        <!-- Expertise Section -->
+        <section id="expertise">
+            <h3 class="section-title text-3xl font-semibold text-gray-900 mb-8">Areas of Expertise</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                <!-- Card 1: Performance Marketing -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="text-blue-500 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8L11 2a1 1 0 00-1.707.707L11.586 7H7a2 2 0 00-2 2v2a2 2 0 002 2h4.414L11 15.293a1 1 0 00.293.707A1 1 0 0012 16h4.586l-2.293-2.293A1 1 0 0115 13h2a1 1 0 001-1v-2a1 1 0 00-1-1h-2a1 1 0 01-1-1v-2a1 1 0 011-1z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">Performance Marketing</h4>
+                    <p class="mt-2 text-gray-600">Google Ads, YouTube Ads, Meta Ads. Driving high-quality leads with a strategic and ROI-focused approach.</p>
+                </div>
+                <!-- Card 2: Content & SEO Strategy -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="text-blue-500 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">Content & SEO Strategy</h4>
+                    <p class="mt-2 text-gray-600">YouTube SEO, Local SEO (GBP), keyword research. Building organic visibility and long-term brand equity.</p>
+                </div>
+                <!-- Card 3: Web & UX Optimization -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="text-blue-500 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1.4-1.4A9 9 0 1121 12a9 9 0 01-2.25 6L15 15l-1.4 1.4L15.75 19H12a9 9 0 01-9-9c0-2.828 1.125-5.548 3.125-7.548L12 2l-1.4 1.4A9 9 0 003 12c0 2.828 1.125 5.548 3.125 7.548L12 20l1.4-1.4z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">Web & UX Optimization</h4>
+                    <p class="mt-2 text-gray-600">UI/UX design with WordPress Elementor to improve conversion rates and user experience.</p>
+                </div>
+                <!-- Card 4: Data & Analytics -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 transform hover:-translate-y-2">
+                    <div class="text-blue-500 mb-4">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-8v8m-4-8v8m-4-8v8m-4-8v8m-4-8v8m-4-8v8M5 16h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-gray-900">Data & Analytics</h4>
+                    <p class="mt-2 text-gray-600">Using Google Analytics, Tag Manager, and Meta Event Manager to track, analyze, and optimize for maximum ROI.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Achievements Section -->
+        <section id="achievements">
+            <h3 class="section-title text-3xl font-semibold text-gray-900 mb-8">Key Achievements</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Achievement Card 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center">
+                    <div class="text-blue-500 mb-2">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8.59l-9 9z"></path></svg>
+                    </div>
+                    <h4 class="text-4xl font-bold text-blue-500">₹2 Lakhs+</h4>
+                    <p class="mt-1 text-gray-600 font-semibold">AdSense Revenue</p>
+                    <p class="mt-2 text-sm text-gray-500">Generated from 2 monetized YouTube channels.</p>
+                </div>
+                <!-- Achievement Card 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center">
+                    <div class="text-blue-500 mb-2">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 12l-5-5v3H9v4h7v3l5-5zM3 4h18a1 1 0 011 1v2a1 1 0 01-1 1H3a1 1 0 01-1-1V5a1 1 0 011-1zm0 8h18a1 1 0 011 1v6a1 1 0 01-1 1H3a1 1 0 01-1-1v-6a1 1 0 011-1z"></path></svg>
+                    </div>
+                    <h4 class="text-4xl font-bold text-blue-500">200+</h4>
+                    <p class="mt-1 text-gray-600 font-semibold">Qualified Leads</p>
+                    <p class="mt-2 text-sm text-gray-500">Consistently generated monthly with a ₹20K ad budget.</p>
+                </div>
+                <!-- Achievement Card 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center">
+                    <div class="text-blue-500 mb-2">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-13l-4 4 1.41 1.41L12 9.83l2.59 2.59L16 11l-4-4z"></path></svg>
+                    </div>
+                    <h4 class="text-4xl font-bold text-blue-500">7+</h4>
+                    <p class="mt-1 text-gray-600 font-semibold">Top Rankings</p>
+                    <p class="mt-2 text-sm text-gray-500">Achieved on GBP for highly relevant local SEO keywords.</p>
+                </div>
+                <!-- Achievement Card 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center flex flex-col items-center">
+                    <div class="text-blue-500 mb-2">
+                        <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM12 6c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm-4 7c-2.76 0-5 2.24-5 5h10c0-2.76-2.24-5-5-5zm-5 5c0-1.79 1.46-3.25 3.25-3.25h3.5c1.79 0 3.25 1.46 3.25 3.25H7z"></path></svg>
+                    </div>
+                    <h4 class="text-4xl font-bold text-blue-500">7%</h4>
+                    <p class="mt-1 text-gray-600 font-semibold">Average CTR</p>
+                    <p class="mt-2 text-sm text-gray-500">Maintained through strategic ad creative and video thumbnails.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Gallery Section -->
+        <section id="portfolio">
+            <h3 class="section-title text-3xl font-semibold text-gray-900 mb-8">My Work in Action</h3>
+            <p class="text-gray-600 mb-8">
+                Here are some visual examples of my work. Click on any image to view a larger version.
+                <br class="hidden sm:inline">
+                <span class="font-semibold text-blue-500">Note:</span> These are placeholder images. Please replace them with your own project screenshots and creatives.
+            </p>
+
+            <!-- Website Design & Development -->
+            <div class="mb-12">
+                <h4 class="text-2xl font-semibold text-gray-800 mb-4">Website Design & Development</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300" onclick="openModal('https://placehold.co/800x600/60a5fa/ffffff?text=Website+Showcase+1')">
+                        <img src="https://placehold.co/400x300/60a5fa/ffffff?text=Website+Showcase+1" alt="Website Design" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">Lead-Gen Website</h5>
+                            <p class="text-sm text-gray-500">UI/UX optimized for high conversion rates.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300" onclick="openModal('https://placehold.co/800x600/3b82f6/ffffff?text=Website+Showcase+2')">
+                        <img src="https://placehold.co/400x300/3b82f6/ffffff?text=Website+Showcase+2" alt="Website Design" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">E-commerce Site</h5>
+                            <p class="text-sm text-gray-500">Developed with a focus on user journey.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ad Creatives & Campaigns -->
+            <div class="mb-12">
+                <h4 class="text-2xl font-semibold text-gray-800 mb-4">Ad Creatives & Campaigns</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300" onclick="openModal('https://placehold.co/800x600/2563eb/ffffff?text=Meta+Ad+Creative')">
+                        <img src="https://placehold.co/400x300/2563eb/ffffff?text=Meta+Ad+Creative" alt="Ad Creative" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">Meta Ad Creative</h5>
+                            <p class="text-sm text-gray-500">Designed for a targeted lead generation campaign.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300" onclick="openModal('https://placehold.co/800x600/1d4ed8/ffffff?text=Google+Ad+Campaign')">
+                        <img src="https://placehold.co/400x300/1d4ed8/ffffff?text=Google+Ad+Campaign" alt="Google Ads" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">Google Ad Campaign</h5>
+                            <p class="text-sm text-gray-500">High-performing search and display ads.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Social Media Posts -->
+            <div class="mb-12">
+                <h4 class="text-2xl font-semibold text-gray-800 mb-4">Social Media Posts</h4>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300" onclick="openModal('https://placehold.co/800x600/0c4a6e/ffffff?text=Instagram+Post')">
+                        <img src="https://placehold.co/400x300/0c4a6e/ffffff?text=Instagram+Post" alt="Instagram Post" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">Instagram Post</h5>
+                            <p class="text-sm text-gray-500">Engaging content to build brand presence.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden cursor-pointer transform hover:scale-105 transition-transform duration-300" onclick="openModal('https://placehold.co/800x600/083344/ffffff?text=Facebook+Post')">
+                        <img src="https://placehold.co/400x300/083344/ffffff?text=Facebook+Post" alt="Facebook Post" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h5 class="font-bold text-lg">Facebook Post</h5>
+                            <p class="text-sm text-gray-500">Designed for community engagement and reach.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Channel & GBP Performance -->
+            <div class="mb-12">
+                <h4 class="text-2xl font-semibold text-gray-800 mb-4">Channel & GMB Performance</h4>
+                <p class="text-gray-600">
+                    My work isn't just about creatives; it's about measurable results. I track key performance indicators on platforms like YouTube and Google Business Profile (GBP) to ensure strategies are driving real business growth.
+                </p>
+                <div class="mt-4 flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden p-6 text-center">
+                        <h5 class="font-bold text-lg mb-2">YouTube Channel Performance</h5>
+                        <p class="text-sm text-gray-500">Key metrics like watch time, subscriber growth, and AdSense revenue.</p>
+                    </div>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden p-6 text-center">
+                        <h5 class="font-bold text-lg mb-2">Google Business Profile</h5>
+                        <p class="text-sm text-gray-500">Showcasing top rankings, call volume, and customer reviews.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="text-center bg-white p-10 rounded-xl shadow-lg">
+            <h3 class="section-title text-3xl font-semibold text-gray-900 mb-8">Let's Connect</h3>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                I am actively seeking opportunities to apply my strategic marketing skills to drive business outcomes. Feel free to connect with me to discuss how I can help your team achieve its goals.
+            </p>
+            <div class="mt-8 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="mailto:your_email@example.com" class="bg-blue-600 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-blue-700 transition-colors duration-300">
+                    Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="bg-gray-800 text-white font-semibold py-3 px-6 rounded-full shadow-md hover:bg-gray-900 transition-colors duration-300">
+                    LinkedIn
+                </a>
+            </div>
+            <p class="mt-4 text-sm text-gray-500">
+                Email: <span id="email-address">your_email@example.com</span>
+                <button onclick="copyToClipboard()" class="ml-2 text-blue-500 hover:text-blue-700 font-medium">Copy</button>
+            </p>
+        </section>
+    </main>
+
+    <!-- Modal for image gallery -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
     </div>
-  </footer>
 
-  <script>
-    // Set current year
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+    <script>
+        // Gallery Modal Functions
+        function openModal(src) {
+            const modal = document.getElementById("myModal");
+            const modalImage = document.getElementById("modalImage");
+            modal.style.display = "flex";
+            modalImage.src = src;
+        }
+
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.style.display = "none";
+        }
+
+        // Copy to clipboard function
+        function copyToClipboard() {
+            const email = document.getElementById("email-address");
+            const range = document.createRange();
+            range.selectNode(email);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            try {
+                const successful = document.execCommand('copy');
+                const msg = successful ? 'Copied!' : 'Failed to copy!';
+                // Use a simple, non-blocking message display instead of alert
+                showTemporaryMessage(msg);
+            } catch (err) {
+                console.error('Failed to copy text: ', err);
+                showTemporaryMessage('Failed to copy email.');
+            }
+            window.getSelection().removeAllRanges();
+        }
+
+        // Simple function to display a temporary message
+        function showTemporaryMessage(message) {
+            const msgElement = document.createElement('div');
+            msgElement.textContent = message;
+            msgElement.className = 'fixed bottom-4 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg transition-opacity duration-300 opacity-0';
+            document.body.appendChild(msgElement);
+            setTimeout(() => {
+                msgElement.style.opacity = '1';
+            }, 10);
+            setTimeout(() => {
+                msgElement.style.opacity = '0';
+                setTimeout(() => msgElement.remove(), 300);
+            }, 2000);
+        }
+
+    </script>
 </body>
 </html>
